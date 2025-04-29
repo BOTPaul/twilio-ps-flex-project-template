@@ -1,11 +1,12 @@
 {
-  "name": "custom-flex-extensions-serverless",
+  "name": "custom-flex-extensions-serverless-zd",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "test": "echo 'Tests to come'; exit 1",
     "start": "twilio serverless:start",
     "deploy": "twilio serverless:deploy --override-existing-project --env \".env${ENVIRONMENT:+.$ENVIRONMENT}\"",
+    "local:deploy": "twilio serverless:deploy --override-existing-project",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "lint:report": "npm run lint -- --output-file eslint_report.json --format json"
